@@ -23,5 +23,6 @@
 3. Run these commands in the ```/path/to/Snappettite-iOS/``` directory.
 4. When running these commands, don't type the ```$``` symbol. So you should type ```pod install``` instead of ```$ pod install```. (The ```$``` is there to indicate the command prompt.
 5. The .storyboard files are very hard to merge with. Please be careful when working on those, you may want to consider creating [multiple storyboards](http://www.newventuresoftware.com/blog/organizing-xcode-projects-using-multiple-storyboards/) for a large application.
+6. Make sure you use asset bundling. When multiple people are working within the same bundle and have merge issues, really really bad things happen.
 # Git Issues?
 If you have a merge conflict or some git trouble, please email one of the CA's immediately! We don't want progress to be hindered because GitHub got in the way.
