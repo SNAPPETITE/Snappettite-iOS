@@ -3,25 +3,33 @@
 # Installation instructions 
 1. Please install [Cocoapods](https://cocoapods.org).
 2. Then run
-   ```bash
+
+   ```
    $ pod install
    ```
+
 3. This should create a xcworkspace file. Please open that instead of the normal xcodeproj file.
-   ```bash
+
+   ```
    $ open Snappettite-iOS.xcworkspace
    ```
+
 4. Start developing!
 
 # Quick "Gotchas"
 1. If another person adds a new package to the Podfile, you will need to run
-   ```bash
+
+   ```
    $ pod install
    ```
+
    To install the added library.
 2. If you would like to update your libraries to a newer version run
-   ```bash
+
+   ```
    $ pod update
    ```
+
 3. Run these commands in the ```/path/to/Snappettite-iOS/``` directory.
 4. When running these commands, don't type the ```$``` symbol. So you should type ```pod install``` instead of ```$ pod install```. (The ```$``` is there to indicate the command prompt.
 5. The .storyboard files are very hard to merge with. Please be careful when working on those, you may want to consider creating [multiple storyboards](http://www.newventuresoftware.com/blog/organizing-xcode-projects-using-multiple-storyboards/) for a large application.
