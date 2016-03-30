@@ -1,5 +1,5 @@
 # Snappettite iOS Application
-
+iOS Application for Snappettite.
 # Installation instructions 
 1. Please install [Cocoapods](https://cocoapods.org).
 2. Then run
@@ -31,7 +31,7 @@
    ```
 
 3. Run these commands in the ```/path/to/Snappettite-iOS/``` directory.
-4. When running these commands, don't type the ```$``` symbol. So you should type ```pod install``` instead of ```$ pod install```. (The ```$``` is there to indicate the command prompt.
+4. When running these commands, don't type the ```$``` symbol. So you should type ```pod install``` instead of ```$ pod install```. (The ```$``` is there to indicate the command prompt.)
 5. The .storyboard files are very hard to merge with. Please be careful when working on those, you may want to consider creating [multiple storyboards](http://www.newventuresoftware.com/blog/organizing-xcode-projects-using-multiple-storyboards/) for a large application.
 6. Make sure you use asset bundling. When multiple people are working within the same bundle and have merge issues, really really bad things happen.
 
