@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oUf-CL-s2q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oUf-CL-s2q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="Mt2-Rm-Ims">
             <objects>
-                <viewController id="oUf-CL-s2q" sceneMemberID="viewController">
+                <viewController title="Home" id="oUf-CL-s2q" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dWj-Is-9TH"/>
                         <viewControllerLayoutGuide type="bottom" id="TEF-x7-sZp"/>
@@ -19,19 +20,62 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-an-sa2">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="xY8-Wb-vXn">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="XzA-qm-qRi">
-                                            <connections>
-                                                <segue destination="sxQ-hr-8wn" kind="show" id="sQt-w1-Jut"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Exist" id="duD-Nd-v77"/>
-                                    </navigationItem>
+                                    <navigationItem title="Home" id="xY8-Wb-vXn"/>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="krK-kb-z9S">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heq-G4-WDn">
+                                <rect key="frame" x="200" y="170" width="200" height="100"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <state key="normal" title="Camera" backgroundImage="forest outlaws">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-Se-nPM">
+                                <rect key="frame" x="200" y="280" width="200" height="100"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <state key="normal" title="History" backgroundImage="forest outlaws">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sxQ-hr-8wn" kind="showDetail" id="EHV-L4-SJt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBp-jQ-ay0">
+                                <rect key="frame" x="200" y="390" width="200" height="100"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <state key="normal" title="Button" backgroundImage="forest outlaws">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Snappetite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ny-z1d">
+                                <rect key="frame" x="182" y="45" width="237" height="100"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aJj-Se-nPM" firstAttribute="top" secondItem="heq-G4-WDn" secondAttribute="bottom" constant="10" id="3NE-Sd-aAd"/>
+                            <constraint firstItem="krK-kb-z9S" firstAttribute="top" secondItem="z7z-jz-PzA" secondAttribute="topMargin" id="4h9-WJ-Pez"/>
+                            <constraint firstItem="krK-kb-z9S" firstAttribute="leading" secondItem="z7z-jz-PzA" secondAttribute="leadingMargin" constant="-20" id="GeO-b9-5K9"/>
+                            <constraint firstItem="heq-G4-WDn" firstAttribute="top" secondItem="4ud-ny-z1d" secondAttribute="bottom" constant="25" id="HFT-2E-GcX"/>
+                            <constraint firstItem="heq-G4-WDn" firstAttribute="centerX" secondItem="4ud-ny-z1d" secondAttribute="centerX" id="JRw-Gp-RQ7"/>
+                            <constraint firstItem="4ud-ny-z1d" firstAttribute="centerX" secondItem="z7z-jz-PzA" secondAttribute="centerX" id="Km2-9s-aGg"/>
+                            <constraint firstItem="kBp-jQ-ay0" firstAttribute="top" secondItem="aJj-Se-nPM" secondAttribute="bottom" constant="10" id="L8w-qY-sOl"/>
+                            <constraint firstItem="krK-kb-z9S" firstAttribute="bottom" secondItem="z7z-jz-PzA" secondAttribute="bottomMargin" id="hUH-1E-328"/>
+                            <constraint firstItem="4ud-ny-z1d" firstAttribute="top" secondItem="dWj-Is-9TH" secondAttribute="bottom" constant="25" id="kdH-z5-dOs"/>
+                            <constraint firstItem="kBp-jQ-ay0" firstAttribute="centerX" secondItem="aJj-Se-nPM" secondAttribute="centerX" id="pIF-qy-Gw2"/>
+                            <constraint firstItem="aJj-Se-nPM" firstAttribute="centerX" secondItem="heq-G4-WDn" secondAttribute="centerX" id="rv0-pd-FFH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="krK-kb-z9S" secondAttribute="trailing" constant="-20" id="t4R-Q8-kiF"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3g-0b-CDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +130,7 @@
                                     <navigationItem title="Info" id="Klq-hm-0uK">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="vNF-R0-x54">
                                             <connections>
-                                                <segue destination="Tkg-TQ-6FV" kind="custom" id="ydt-nD-4NF"/>
+                                                <segue destination="oUf-CL-s2q" kind="showDetail" id="5gN-U0-Zei"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Exist" id="t9X-Ix-IE0"/>
@@ -133,7 +177,9 @@
         <!--Navigation Controller-->
         <scene sceneID="he8-fx-oUc">
             <objects>
-                <navigationController id="zTc-z0-gPh" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="zTc-z0-gPh" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Wn-rR-lJx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -144,10 +190,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMq-4T-LHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="925"/>
+            <point key="canvasLocation" x="463" y="918"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="RHq-EZ-9xU"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Image" width="750" height="1334"/>
+        <image name="forest outlaws" width="200" height="100"/>
+    </resources>
 </document>
