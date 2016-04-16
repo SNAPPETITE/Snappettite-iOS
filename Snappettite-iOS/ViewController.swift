@@ -7,12 +7,56 @@
 //
 
 import UIKit
+import MobileCoreServices
+import AssetsLibrary
 
-class ViewController: UIViewController {
-    
-    //MARK: properties
-   
-    override func viewDidLoad() {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate {
+    @IBOutlet weak var Camera: UIButton!
+    @IBOutlet weak var History: UIButton!
+    @IBOutlet weak var Settings: UIButton!
+    @IBOutlet weak var Analysis: UIButton!
+    @IBAction func selectImageAction(sender: AnyObject) {
+        let actionSheetController: UIAlertController = UIAlertController(title: "Please select...", message:nil, preferredStyle: .ActionSheet)
+        //取消按钮
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in }
+        actionSheetController.addAction(cancelAction)
+        
+        //拍照
+        let takePictureAction: UIAlertAction = UIAlertAction(title: "Take a photo", style: .Default)
+        {action -> Void in [self .initWithImagePickView("Take a photo")]}
+        
+        actionSheetController.addAction(takePictureAction)
+        
+        //相册选择
+        let choosePictureAction: UIAlertAction = UIAlertAction(title: "To Album", style: .Default)
+        {action -> Void in[self .initWithImagePickView("To Album")]}
+        
+        actionSheetController.addAction(choosePictureAction)
+        
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
+
+    }
+    var imagePicker : UIImagePickerController!
+    func initWithImagePickView(type:NSString){
+        
+        self.imagePicker = UIImagePickerController()
+        self.imagePicker.delegate      = self;
+        self.imagePicker.allowsEditing = true;
+        
+        switch type{
+        case "Take a photo":
+            self.imagePicker.sourceType = .Camera
+            break
+        case "To Album":
+            self.imagePicker.sourceType = .PhotoLibrary
+            break
+        default:
+            print("error")
+        }
+        
+        presentViewController(self.imagePicker, animated: true, completion: nil)
+    }
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
