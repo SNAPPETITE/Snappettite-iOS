@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B8F28161CC50AC90037DEA5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28151CC50AC90037DEA5 /* TableViewCell.swift */; };
+		0B8F28181CC511B00037DEA5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28171CC511B00037DEA5 /* TableViewController.swift */; };
+		0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28191CC51A690037DEA5 /* RatingControl.swift */; };
 		E2B0F9501CAB77DA006FF3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */; };
 		E2B0F9521CAB77DA006FF3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */; };
 		E2B0F9551CAB77DA006FF3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B8F28151CC50AC90037DEA5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = "Snappettite-iOS/TableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		0B8F28171CC511B00037DEA5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0B8F28191CC51A690037DEA5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		E2B0F94C1CAB77DA006FF3C9 /* Snappettite-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snappettite-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */,
 				E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */,
 				E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */,
+				0B8F28191CC51A690037DEA5 /* RatingControl.swift */,
+				0B8F28151CC50AC90037DEA5 /* TableViewCell.swift */,
+				0B8F28171CC511B00037DEA5 /* TableViewController.swift */,
 				E2B0F9591CAB77DA006FF3C9 /* Assets.xcassets */,
 				E2B0F95B1CAB77DA006FF3C9 /* LaunchScreen.storyboard */,
 				E2B0F95E1CAB77DA006FF3C9 /* Info.plist */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B0F9521CAB77DA006FF3C9 /* ViewController.swift in Sources */,
+				0B8F28161CC50AC90037DEA5 /* TableViewCell.swift in Sources */,
 				E2B0F9501CAB77DA006FF3C9 /* AppDelegate.swift in Sources */,
+				0B8F28181CC511B00037DEA5 /* TableViewController.swift in Sources */,
+				0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */,
 				E2B0F9581CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

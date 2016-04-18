@@ -15,6 +15,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var History: UIButton!
     @IBOutlet weak var Settings: UIButton!
     @IBOutlet weak var Analysis: UIButton!
+    @IBOutlet weak var ratingControl: RatingControl!
     @IBAction func selectImageAction(sender: AnyObject) {
         let actionSheetController: UIAlertController = UIAlertController(title: "Please select...", message:nil, preferredStyle: .ActionSheet)
         //取消按钮
@@ -36,13 +37,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.presentViewController(actionSheetController, animated: true, completion: nil)
 
     }
+    @IBOutlet weak var foodImage: UIImageView!
     var imagePicker : UIImagePickerController!
     func initWithImagePickView(type:NSString){
         
         self.imagePicker = UIImagePickerController()
         self.imagePicker.delegate      = self;
         self.imagePicker.allowsEditing = true;
-        
         switch type{
         case "Take a photo":
             self.imagePicker.sourceType = .Camera
