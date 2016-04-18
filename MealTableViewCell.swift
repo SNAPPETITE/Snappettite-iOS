@@ -11,10 +11,18 @@ import UIKit
 class MealTableViewCell: UITableViewCell {
     // MARK: Properties
     
-    var meals = [MealTableViewController]()
+    /* var meals = [MealTableViewController]() */
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    func initWithParams (name: String, photo: UIImage!, rating: Int)
+    {
+        // name to Rating Control
+        self.photoImageView.image = photo
+        self.nameLabel.text = name
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
