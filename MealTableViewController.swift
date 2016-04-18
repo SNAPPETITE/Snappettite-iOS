@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  MealTableViewController.swift
 //  Snappettite-iOS
 //
 //  Created by Danny‘zert on 4/18/16.
@@ -8,15 +8,21 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
-    // MARK: Properties
-    
-    @IBOutlet weak var mealName: UILabel!
-    @IBOutlet weak var ratingControl: RatingControl!
-    @IBOutlet weak var photoImageView: UIImageView!
+class MealTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        func loadSampleMeals() {
+            let photo1 = UIImage(named: "meal1")!
+            let meal1 = MealTableViewController(name: "Caprese Salad", photo: photo1, rating: 4)!
+            
+            let photo2 = UIImage(named: "meal2")!
+            let meal2 = MealTableViewController(name: "Chicken and Potatoes", photo: photo2, rating: 5)!
+            
+            let photo3 = UIImage(named: "meal3")!
+            let meal3 = MealTableViewController(name: "Pasta with Meatballs", photo: photo3, rating: 3)!
+            meals += [meal1, meal2, meal3]
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

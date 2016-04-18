@@ -1,5 +1,5 @@
 //
-//  TableViewCell.swift
+//  MealTableViewCell.swift
 //  Snappettite-iOS
 //
 //  Created by Danny‘zert on 4/18/16.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class TableViewCell:
+class MealTableViewCell: UITableViewCell {
     // MARK: Properties
     
-    
-UITableViewCell {
-
+    var meals = [MealTableViewController]()
+    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

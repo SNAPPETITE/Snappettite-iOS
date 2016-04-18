@@ -253,7 +253,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="90" id="dkP-Bx-hIf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="90" id="dkP-Bx-hIf" customClass="MealTableViewCell" customModule="Snappettite_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dkP-Bx-hIf" id="LQc-KF-pwS">
@@ -263,7 +263,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfv-34-Lf0">
                                             <rect key="frame" x="-28" y="-11" width="156" height="128"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-9S-GYF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal summary for Tuesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-9S-GYF">
                                             <rect key="frame" x="141" y="8" width="451" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -275,6 +275,12 @@
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mealLabel" destination="LQc-KF-pwS" id="FmE-fU-lUf"/>
+                                    <outlet property="nameLabel" destination="gRD-9S-GYF" id="fvr-l0-VIh"/>
+                                    <outlet property="photoImageView" destination="xfv-34-Lf0" id="bSr-yk-ZFD"/>
+                                    <outlet property="ratingControl" destination="cqd-gI-5aG" id="tiI-I2-x8x"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -289,11 +295,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="mealName" destination="gRD-9S-GYF" id="eQL-7f-L28"/>
-                        <outlet property="photoImageView" destination="xfv-34-Lf0" id="T1N-QM-jb0"/>
-                        <outlet property="ratingControl" destination="cqd-gI-5aG" id="tqG-ch-1MP"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEC-7l-xM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,6 +383,6 @@
         <image name="forest outlaws" width="200" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YbF-IW-Oe6"/>
+        <segue reference="MJv-Fa-V4z"/>
     </inferredMetricsTieBreakers>
 </document>
