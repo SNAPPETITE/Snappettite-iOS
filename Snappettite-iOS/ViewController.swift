@@ -15,7 +15,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var History: UIButton!
     @IBOutlet weak var Settings: UIButton!
     @IBOutlet weak var Analysis: UIButton!
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
+    
     @IBAction func selectImageAction(sender: AnyObject) {
         let actionSheetController: UIAlertController = UIAlertController(title: "Please select...", message:nil, preferredStyle: .ActionSheet)
         //取消按钮
@@ -23,6 +26,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         actionSheetController.addAction(cancelAction)
         
         //拍照
+
         let takePictureAction: UIAlertAction = UIAlertAction(title: "Take a photo", style: .Default)
         {action -> Void in [self .initWithImagePickView("Take a photo")]}
         
@@ -37,7 +41,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.presentViewController(actionSheetController, animated: true, completion: nil)
 
     }
-    @IBOutlet weak var foodImage: UIImageView!
+    
     var imagePicker : UIImagePickerController!
     func initWithImagePickView(type:NSString){
         
@@ -56,6 +60,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         presentViewController(self.imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        img.image = image
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
     }
         override func viewDidLoad() {
         super.viewDidLoad()

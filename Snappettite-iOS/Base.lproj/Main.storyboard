@@ -104,24 +104,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-EH-wkJ">
-                                <rect key="frame" x="20" y="81" width="229" height="281"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="Nap-Je-fGS"/>
-                                    <constraint firstAttribute="width" constant="229" id="pZl-OM-Nvw"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-0z-6Kw">
-                                <rect key="frame" x="288" y="81" width="292" height="366"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="366" id="6gB-2T-0tM"/>
-                                    <constraint firstAttribute="width" constant="292" id="75F-kx-VNV"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-UW-qIY">
                                 <rect key="frame" x="20" y="20" width="560" height="44"/>
                                 <constraints>
@@ -135,21 +117,20 @@
                                                 <segue destination="oUf-CL-s2q" kind="showDetail" id="5gN-U0-Zei"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Exist" id="t9X-Ix-IE0"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb7-7P-I5E">
-                                <rect key="frame" x="86" y="397" width="120" height="70"/>
+                                <rect key="frame" x="240" y="411" width="120" height="70"/>
                                 <state key="normal" title="Add Image" backgroundImage="forest outlaws">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectImageAction:" destination="sxQ-hr-8wn" eventType="touchUpInside" id="f4E-eY-37H"/>
+                                    <action selector="selectImageAction:" destination="sxQ-hr-8wn" eventType="touchUpInside" id="lzC-jp-ENW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7x1-jA-Ds4">
-                                <rect key="frame" x="86" y="475" width="120" height="70"/>
+                                <rect key="frame" x="240" y="489" width="120" height="70"/>
                                 <state key="normal" title="get Analysis" backgroundImage="forest outlaws">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -157,22 +138,26 @@
                                     <segue destination="lUK-ce-6Zc" kind="showDetail" id="vRw-nL-fpg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-EH-wkJ">
+                                <rect key="frame" x="186" y="97" width="229" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="Nap-Je-fGS"/>
+                                    <constraint firstAttribute="width" constant="229" id="pZl-OM-Nvw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TVG-0z-6Kw" firstAttribute="trailing" secondItem="FjH-6j-Dp4" secondAttribute="trailingMargin" id="2no-ck-XKA"/>
+                            <constraint firstItem="9pu-EH-wkJ" firstAttribute="top" secondItem="7v6-l8-zsI" secondAttribute="bottom" constant="77" id="3Lz-BZ-eVJ"/>
                             <constraint firstItem="TwA-UW-qIY" firstAttribute="trailing" secondItem="FjH-6j-Dp4" secondAttribute="trailingMargin" id="5LX-qh-gtH"/>
-                            <constraint firstItem="2aZ-Tq-PRh" firstAttribute="top" secondItem="Eb7-7P-I5E" secondAttribute="bottom" constant="153" id="5yR-Kp-PgM"/>
+                            <constraint firstItem="2aZ-Tq-PRh" firstAttribute="top" secondItem="Eb7-7P-I5E" secondAttribute="bottom" constant="119" id="7nU-4I-thr"/>
                             <constraint firstItem="TwA-UW-qIY" firstAttribute="leading" secondItem="FjH-6j-Dp4" secondAttribute="leadingMargin" id="8Wg-ON-wkC"/>
                             <constraint firstItem="Eb7-7P-I5E" firstAttribute="centerX" secondItem="FjH-6j-Dp4" secondAttribute="centerX" id="AWA-hP-HnK"/>
-                            <constraint firstItem="7x1-jA-Ds4" firstAttribute="top" secondItem="Eb7-7P-I5E" secondAttribute="bottom" constant="9" id="FFC-gG-3C1"/>
-                            <constraint firstItem="2aZ-Tq-PRh" firstAttribute="top" secondItem="9pu-EH-wkJ" secondAttribute="bottom" constant="238" id="NJW-fv-c3H"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TVG-0z-6Kw" secondAttribute="trailing" id="P0i-ch-9l2"/>
-                            <constraint firstItem="2aZ-Tq-PRh" firstAttribute="top" secondItem="TVG-0z-6Kw" secondAttribute="bottom" constant="153" id="Tab-yD-EPd"/>
-                            <constraint firstItem="7x1-jA-Ds4" firstAttribute="centerX" secondItem="Eb7-7P-I5E" secondAttribute="centerX" id="h8E-tO-07Z"/>
+                            <constraint firstItem="9pu-EH-wkJ" firstAttribute="centerX" secondItem="FjH-6j-Dp4" secondAttribute="centerX" id="BL3-hO-nJF"/>
+                            <constraint firstItem="7x1-jA-Ds4" firstAttribute="centerX" secondItem="Eb7-7P-I5E" secondAttribute="centerX" id="Doo-e3-daZ"/>
+                            <constraint firstItem="7x1-jA-Ds4" firstAttribute="top" secondItem="Eb7-7P-I5E" secondAttribute="bottom" constant="8" id="FBZ-dL-CRX"/>
                             <constraint firstItem="TwA-UW-qIY" firstAttribute="top" secondItem="7v6-l8-zsI" secondAttribute="bottom" id="sMq-Ew-Cyf"/>
                             <constraint firstItem="TwA-UW-qIY" firstAttribute="leading" secondItem="FjH-6j-Dp4" secondAttribute="leadingMargin" id="tbm-xe-sl1"/>
-                            <constraint firstItem="TVG-0z-6Kw" firstAttribute="leading" secondItem="9pu-EH-wkJ" secondAttribute="trailing" constant="39" id="wZ4-3u-bXd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -180,6 +165,7 @@
                         <outlet property="addImage" destination="Eb7-7P-I5E" id="3Kx-E2-eFA"/>
                         <outlet property="foodImage" destination="9pu-EH-wkJ" id="k2E-r5-ahN"/>
                         <outlet property="getAna" destination="7x1-jA-Ds4" id="cIs-VI-abJ"/>
+                        <outlet property="img" destination="9pu-EH-wkJ" id="YQJ-oz-cTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x93-HU-hWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,6 +199,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-0z-6Kw">
+                                <rect key="frame" x="20" y="142" width="292" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="366" id="6gB-2T-0tM"/>
+                                    <constraint firstAttribute="width" constant="292" id="75F-kx-VNV"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
