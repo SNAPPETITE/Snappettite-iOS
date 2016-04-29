@@ -18,9 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-UW-qIY">
-                                <rect key="frame" x="20" y="20" width="560" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="3hd-jX-gq7"/>
                                     <constraint firstAttribute="height" constant="44" id="8Mc-mC-MCI"/>
                                 </constraints>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,17 +55,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lUK-ce-6Zc" kind="showDetail" id="vRw-nL-fpg"/>
+                                    <segue destination="GYy-yD-ep6" kind="showDetail" id="GO3-L5-Ybe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TwA-UW-qIY" firstAttribute="leading" secondItem="wPU-nb-Jsz" secondAttribute="leadingMargin" constant="-20" id="7PY-ya-7rm"/>
                             <constraint firstItem="TwA-UW-qIY" firstAttribute="top" secondItem="eNY-D3-W07" secondAttribute="bottom" id="HkP-XJ-Ucv"/>
                             <constraint firstItem="7x1-jA-Ds4" firstAttribute="centerX" secondItem="Eb7-7P-I5E" secondAttribute="centerX" id="T22-OR-7lk"/>
                             <constraint firstItem="9pu-EH-wkJ" firstAttribute="top" secondItem="eNY-D3-W07" secondAttribute="bottom" constant="76" id="V3h-xU-p88"/>
-                            <constraint firstItem="TwA-UW-qIY" firstAttribute="trailing" secondItem="wPU-nb-Jsz" secondAttribute="trailingMargin" id="gIh-tW-5FI"/>
-                            <constraint firstItem="TwA-UW-qIY" firstAttribute="leading" secondItem="wPU-nb-Jsz" secondAttribute="leadingMargin" id="hew-Pi-BGY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TwA-UW-qIY" secondAttribute="trailing" constant="-20" id="kf3-eU-5ze"/>
                             <constraint firstItem="Eb7-7P-I5E" firstAttribute="top" secondItem="9pu-EH-wkJ" secondAttribute="bottom" constant="32" id="m2C-uH-Qch"/>
                             <constraint firstItem="Eb7-7P-I5E" firstAttribute="centerX" secondItem="wPU-nb-Jsz" secondAttribute="centerX" id="okN-oN-gm5"/>
                             <constraint firstItem="7x1-jA-Ds4" firstAttribute="top" secondItem="Eb7-7P-I5E" secondAttribute="bottom" constant="15" id="tsh-Lt-FSo"/>
@@ -80,6 +79,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gle-Rf-FcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="360" y="-405"/>
+        </scene>
+        <!--Food Analysis-->
+        <scene sceneID="9Zt-bI-qO3">
+            <objects>
+                <viewController title="Food Analysis" id="GYy-yD-ep6" customClass="BarChartViewController" customModule="Snappettite_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N3W-i3-FAm"/>
+                        <viewControllerLayoutGuide type="bottom" id="DHw-j6-jCg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MuW-Vm-OYg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReQ-uk-Xsj">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A5J-xY-1o9"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Food Analysis" id="GaI-fy-Zpb">
+                                        <barButtonItem key="leftBarButtonItem" title="Add New Food" id="Re8-RY-Ihk">
+                                            <connections>
+                                                <segue destination="TUH-0V-5mS" kind="showDetail" id="NBZ-VW-slz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQb-7f-fXY" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="159" y="137" width="283" height="326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="326" id="eNB-r9-SvV"/>
+                                    <constraint firstAttribute="width" constant="283" id="qmL-TT-LxS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ReQ-uk-Xsj" secondAttribute="trailing" constant="-20" id="0Bg-Sz-h1j"/>
+                            <constraint firstItem="ReQ-uk-Xsj" firstAttribute="leading" secondItem="MuW-Vm-OYg" secondAttribute="leadingMargin" constant="-20" id="7CD-yv-G3L"/>
+                            <constraint firstItem="iQb-7f-fXY" firstAttribute="top" secondItem="ReQ-uk-Xsj" secondAttribute="bottom" constant="73" id="Jzk-z6-eQE"/>
+                            <constraint firstItem="ReQ-uk-Xsj" firstAttribute="top" secondItem="N3W-i3-FAm" secondAttribute="bottom" id="ULp-kq-oXo"/>
+                            <constraint firstItem="iQb-7f-fXY" firstAttribute="centerX" secondItem="MuW-Vm-OYg" secondAttribute="centerX" id="eVk-t7-dfL"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="barChartView" destination="iQb-7f-fXY" id="GDm-9z-uf4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gre-0u-cgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="-405"/>
         </scene>
         <!--Home-->
         <scene sceneID="Mt2-Rm-Ims">
@@ -159,63 +212,14 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Camera" destination="heq-G4-WDn" id="dik-2v-6QD"/>
-                        <outlet property="History" destination="aJj-Se-nPM" id="q6r-dN-tn2"/>
-                        <outlet property="Settings" destination="kBp-jQ-ay0" id="3nz-Ei-WVd"/>
+                        <outlet property="Camera" destination="heq-G4-WDn" id="o8i-Ae-EFg"/>
+                        <outlet property="History" destination="aJj-Se-nPM" id="jnV-HV-Nuf"/>
+                        <outlet property="Settings" destination="kBp-jQ-ay0" id="4JI-4e-jtR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3g-0b-CDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-361" y="-44"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FeR-zk-sWM">
-            <objects>
-                <viewController id="lUK-ce-6Zc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Mc5-Dt-rbt"/>
-                        <viewControllerLayoutGuide type="bottom" id="dXg-bL-9nQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rSi-FB-FkP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vZ-PT-NNf">
-                                <rect key="frame" x="20" y="20" width="560" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="kgD-I8-Z2T"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Food Analyzation" id="A0w-pp-ZN5">
-                                        <barButtonItem key="leftBarButtonItem" title="Another photo" id="BYZ-fV-es0">
-                                            <connections>
-                                                <segue destination="TUH-0V-5mS" kind="showDetail" id="eiP-73-clN"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-0z-6Kw">
-                                <rect key="frame" x="154" y="117" width="292" height="366"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="8vZ-PT-NNf" firstAttribute="trailing" secondItem="rSi-FB-FkP" secondAttribute="trailingMargin" id="Kmn-w8-ObT"/>
-                            <constraint firstItem="8vZ-PT-NNf" firstAttribute="top" secondItem="Mc5-Dt-rbt" secondAttribute="bottom" id="NPB-tQ-IrT"/>
-                            <constraint firstItem="TVG-0z-6Kw" firstAttribute="centerY" secondItem="rSi-FB-FkP" secondAttribute="centerY" id="OtZ-jg-ggL"/>
-                            <constraint firstItem="8vZ-PT-NNf" firstAttribute="leading" secondItem="rSi-FB-FkP" secondAttribute="leadingMargin" id="qo4-n9-Wb4"/>
-                            <constraint firstItem="TVG-0z-6Kw" firstAttribute="centerX" secondItem="rSi-FB-FkP" secondAttribute="centerX" id="xxX-bY-8by"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q8t-dC-LM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="-405"/>
         </scene>
         <!--History-->
         <scene sceneID="Yvw-Fq-3eT">
@@ -280,6 +284,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Meals" id="28v-EL-bCH">
+                        <barButtonItem key="leftBarButtonItem" id="Acc-rb-r6C">
+                            <connections>
+                                <segue destination="Ech-TU-LOV" kind="showDetail" id="LgF-jF-3gD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YvB-y2-i3t">
                             <connections>
                                 <segue destination="Kfn-kb-7qJ" kind="show" id="U1M-7v-7HM"/>
@@ -374,6 +383,7 @@
         <image name="forest outlaws" width="200" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Md3-2P-57H"/>
+        <segue reference="LgF-jF-3gD"/>
+        <segue reference="NBZ-VW-slz"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,15 +9,15 @@
 import UIKit
 import MobileCoreServices
 import AssetsLibrary
+import Charts
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate {
-    @IBOutlet weak var Camera: UIButton!
-    @IBOutlet weak var History: UIButton!
-    @IBOutlet weak var Settings: UIButton!
-    @IBOutlet weak var Analysis: UIButton!
     
+    @IBOutlet weak var Camera: UIButton!
     @IBOutlet weak var ratingControl: RatingControl!
     
+    @IBOutlet weak var Settings: UIButton!
+    @IBOutlet weak var History: UIButton!
     @IBOutlet weak var img: UIImageView!
     @IBAction func selectImageAction(sender: AnyObject) {
         

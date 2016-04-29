@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B473A41CCEE2510052533A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4739D1CCEE2450052533A /* Charts.framework */; };
+		05B473A51CCEE2510052533A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4739D1CCEE2450052533A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05B473AC1CCEEDA30052533A /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B473AB1CCEEDA30052533A /* BarChartViewController.swift */; };
+		05B577431CD4160400CECD99 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B577421CD4160400CECD99 /* ChartsViewController.swift */; };
 		0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28191CC51A690037DEA5 /* RatingControl.swift */; };
 		0B8F281C1CC5884A0037DEA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */; };
 		0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */; };
@@ -18,7 +22,62 @@
 		E2B0F95D1CAB77DA006FF3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F95B1CAB77DA006FF3C9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		05B4739C1CCEE2450052533A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		05B4739E1CCEE2450052533A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		05B473A01CCEE2450052533A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		05B473A21CCEE2450052533A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		05B473A61CCEE2510052533A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05B473A81CCEE2520052533A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05B473A51CCEE2510052533A /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05B473951CCEE2450052533A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		05B473AB1CCEEDA30052533A /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		05B577421CD4160400CECD99 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		0B8F28191CC51A690037DEA5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 		0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewController.swift; path = ../MealTableViewController.swift; sourceTree = "<group>"; };
@@ -37,15 +96,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B473A41CCEE2510052533A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B473961CCEE2450052533A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05B4739D1CCEE2450052533A /* Charts.framework */,
+				05B4739F1CCEE2450052533A /* Charts.framework */,
+				05B473A11CCEE2450052533A /* Charts.framework */,
+				05B473A31CCEE2450052533A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E2B0F9431CAB77DA006FF3C9 = {
 			isa = PBXGroup;
 			children = (
+				05B473951CCEE2450052533A /* Charts.xcodeproj */,
 				E2B0F94E1CAB77DA006FF3C9 /* Snappettite-iOS */,
 				E2B0F94D1CAB77DA006FF3C9 /* Products */,
 			);
@@ -67,6 +139,8 @@
 				E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */,
 				E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */,
 				E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */,
+				05B473AB1CCEEDA30052533A /* BarChartViewController.swift */,
+				05B577421CD4160400CECD99 /* ChartsViewController.swift */,
 				0B8F28191CC51A690037DEA5 /* RatingControl.swift */,
 				E2B0F9591CAB77DA006FF3C9 /* Assets.xcassets */,
 				E2B0F95B1CAB77DA006FF3C9 /* LaunchScreen.storyboard */,
@@ -86,10 +160,12 @@
 				E2B0F9481CAB77DA006FF3C9 /* Sources */,
 				E2B0F9491CAB77DA006FF3C9 /* Frameworks */,
 				E2B0F94A1CAB77DA006FF3C9 /* Resources */,
+				05B473A81CCEE2520052533A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05B473A71CCEE2510052533A /* PBXTargetDependency */,
 			);
 			name = "Snappettite-iOS";
 			productName = "Snappettite-iOS";
@@ -122,12 +198,49 @@
 			mainGroup = E2B0F9431CAB77DA006FF3C9;
 			productRefGroup = E2B0F94D1CAB77DA006FF3C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 05B473961CCEE2450052533A /* Products */;
+					ProjectRef = 05B473951CCEE2450052533A /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E2B0F94B1CAB77DA006FF3C9 /* Snappettite-iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		05B4739D1CCEE2450052533A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 05B4739C1CCEE2450052533A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05B4739F1CCEE2450052533A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 05B4739E1CCEE2450052533A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05B473A11CCEE2450052533A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 05B473A01CCEE2450052533A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05B473A31CCEE2450052533A /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 05B473A21CCEE2450052533A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2B0F94A1CAB77DA006FF3C9 /* Resources */ = {
@@ -148,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B0F9521CAB77DA006FF3C9 /* ViewController.swift in Sources */,
+				05B577431CD4160400CECD99 /* ChartsViewController.swift in Sources */,
 				E2B0F9501CAB77DA006FF3C9 /* AppDelegate.swift in Sources */,
 				0B8F281C1CC5884A0037DEA5 /* MealTableViewCell.swift in Sources */,
+				05B473AC1CCEEDA30052533A /* BarChartViewController.swift in Sources */,
 				0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */,
 				0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */,
 				E2B0F9581CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld in Sources */,
@@ -157,6 +272,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05B473A71CCEE2510052533A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 05B473A61CCEE2510052533A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */ = {
@@ -268,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Snappettite-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.snappettite.Snappettite-iOS";
@@ -280,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Snappettite-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.snappettite.Snappettite-iOS";
