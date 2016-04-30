@@ -11,6 +11,10 @@ import Charts
 
 class BarChartViewController: ViewController {
     
+    @IBAction func saveImage(sender: UIBarButtonItem) {
+        barChartView.saveToCameraRoll()
+    }
+    
     @IBOutlet weak var barChartView: BarChartView!
     
     var nutrient: [String]!
@@ -46,6 +50,8 @@ class BarChartViewController: ViewController {
         barChartView.data = chartData
         
         barChartView.descriptionText = ""
+        barChartView.xAxis.labelPosition = .Bottom  
+        chartDataSet.colors = [UIColor(red: 80/255, green: 200/255, blue: 176/255, alpha: 1)]
         
     }
     

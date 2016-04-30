@@ -104,6 +104,11 @@
                                                 <segue destination="TUH-0V-5mS" kind="showDetail" id="NBZ-VW-slz"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save as Image" id="ybk-r2-uVT">
+                                            <connections>
+                                                <action selector="saveImage:" destination="GYy-yD-ep6" id="UYL-q6-aSx"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

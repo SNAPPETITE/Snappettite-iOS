@@ -11,7 +11,8 @@ import MobileCoreServices
 import AssetsLibrary
 import Charts
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate {
+
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate  {
     
     @IBOutlet weak var Camera: UIButton!
     @IBOutlet weak var ratingControl: RatingControl!
