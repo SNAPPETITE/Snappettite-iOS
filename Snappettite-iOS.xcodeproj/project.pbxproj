@@ -11,6 +11,8 @@
 		05B473A51CCEE2510052533A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4739D1CCEE2450052533A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B473AC1CCEEDA30052533A /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B473AB1CCEEDA30052533A /* BarChartViewController.swift */; };
 		05B577431CD4160400CECD99 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B577421CD4160400CECD99 /* ChartsViewController.swift */; };
+		0B0EF7C61CD78EFE007A56A4 /*  bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EF7C51CD78EFE007A56A4 /*  bundle.bundle */; };
+		0B0EF7CB1CD794FA007A56A4 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B0EF7CA1CD794FA007A56A4 /* Property List.plist */; };
 		0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28191CC51A690037DEA5 /* RatingControl.swift */; };
 		0B8F281C1CC5884A0037DEA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */; };
 		0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */; };
@@ -77,6 +79,8 @@
 		05B473951CCEE2450052533A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		05B473AB1CCEEDA30052533A /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		05B577421CD4160400CECD99 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		0B0EF7C51CD78EFE007A56A4 /*  bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = " bundle.bundle"; path = "../../../Documents/ bundle.bundle"; sourceTree = "<group>"; };
+		0B0EF7CA1CD794FA007A56A4 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Property List.plist"; path = "../Property List.plist"; sourceTree = "<group>"; };
 		0B8F28191CC51A690037DEA5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 		0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewController.swift; path = ../MealTableViewController.swift; sourceTree = "<group>"; };
@@ -132,10 +136,12 @@
 			isa = PBXGroup;
 			children = (
 				0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */,
+				0B0EF7CA1CD794FA007A56A4 /* Property List.plist */,
 				0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */,
 				E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */,
 				E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */,
 				E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */,
+				0B0EF7C51CD78EFE007A56A4 /*  bundle.bundle */,
 				05B473AB1CCEEDA30052533A /* BarChartViewController.swift */,
 				05B577421CD4160400CECD99 /* ChartsViewController.swift */,
 				0B8F28191CC51A690037DEA5 /* RatingControl.swift */,
@@ -242,8 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0EF7C61CD78EFE007A56A4 /*  bundle.bundle in Resources */,
 				E2B0F95D1CAB77DA006FF3C9 /* LaunchScreen.storyboard in Resources */,
 				E2B0F95A1CAB77DA006FF3C9 /* Assets.xcassets in Resources */,
+				0B0EF7CB1CD794FA007A56A4 /* Property List.plist in Resources */,
 				E2B0F9551CAB77DA006FF3C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
