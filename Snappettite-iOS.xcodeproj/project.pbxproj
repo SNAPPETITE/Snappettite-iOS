@@ -11,14 +11,12 @@
 		05B473A51CCEE2510052533A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05B4739D1CCEE2450052533A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B473AC1CCEEDA30052533A /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B473AB1CCEEDA30052533A /* BarChartViewController.swift */; };
 		05B577431CD4160400CECD99 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B577421CD4160400CECD99 /* ChartsViewController.swift */; };
-		05B577961CD42CF000CECD99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B577951CD42CF000CECD99 /* SystemConfiguration.framework */; };
 		0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28191CC51A690037DEA5 /* RatingControl.swift */; };
 		0B8F281C1CC5884A0037DEA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */; };
 		0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */; };
 		E2B0F9501CAB77DA006FF3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */; };
 		E2B0F9521CAB77DA006FF3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */; };
 		E2B0F9551CAB77DA006FF3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */; };
-		E2B0F9581CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F9561CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld */; };
 		E2B0F95A1CAB77DA006FF3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F9591CAB77DA006FF3C9 /* Assets.xcassets */; };
 		E2B0F95D1CAB77DA006FF3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F95B1CAB77DA006FF3C9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -79,8 +77,6 @@
 		05B473951CCEE2450052533A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		05B473AB1CCEEDA30052533A /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		05B577421CD4160400CECD99 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
-		05B577951CD42CF000CECD99 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		05B577B21CD43D4200CECD99 /* Snappettite-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snappettite-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B8F28191CC51A690037DEA5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 		0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewController.swift; path = ../MealTableViewController.swift; sourceTree = "<group>"; };
@@ -88,10 +84,8 @@
 		E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2B0F9541CAB77DA006FF3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2B0F9571CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Snappettite_iOS.xcdatamodel; sourceTree = "<group>"; };
 		E2B0F9591CAB77DA006FF3C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B0F95C1CAB77DA006FF3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E2B0F95E1CAB77DA006FF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B577961CD42CF000CECD99 /* SystemConfiguration.framework in Frameworks */,
 				05B473A41CCEE2510052533A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +114,6 @@
 		E2B0F9431CAB77DA006FF3C9 = {
 			isa = PBXGroup;
 			children = (
-				05B577951CD42CF000CECD99 /* SystemConfiguration.framework */,
 				05B473951CCEE2450052533A /* Charts.xcodeproj */,
 				E2B0F94E1CAB77DA006FF3C9 /* Snappettite-iOS */,
 				E2B0F94D1CAB77DA006FF3C9 /* Products */,
@@ -149,9 +141,6 @@
 				0B8F28191CC51A690037DEA5 /* RatingControl.swift */,
 				E2B0F9591CAB77DA006FF3C9 /* Assets.xcassets */,
 				E2B0F95B1CAB77DA006FF3C9 /* LaunchScreen.storyboard */,
-				E2B0F95E1CAB77DA006FF3C9 /* Info.plist */,
-				E2B0F9561CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld */,
-				05B577B21CD43D4200CECD99 /* Snappettite-iOS-Bridging-Header.h */,
 			);
 			path = "Snappettite-iOS";
 			sourceTree = "<group>";
@@ -273,7 +262,6 @@
 				05B473AC1CCEEDA30052533A /* BarChartViewController.swift in Sources */,
 				0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */,
 				0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */,
-				E2B0F9581CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,19 +445,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E2B0F9561CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E2B0F9571CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodel */,
-			);
-			currentVersion = E2B0F9571CAB77DA006FF3C9 /* Snappettite_iOS.xcdatamodel */;
-			path = Snappettite_iOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E2B0F9441CAB77DA006FF3C9 /* Project object */;
 }
