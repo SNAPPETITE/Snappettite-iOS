@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 class ChartsViewController: UIViewController {
-    //2 views
+    //2 views in a controller
     @IBOutlet weak var Nutrients: UIPickerView!
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var pieChartView: PieChartView!
@@ -40,6 +40,7 @@ class ChartsViewController: UIViewController {
         let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Nutrients")
         let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
+        pieChartDataSet.colors =  [UIColor(red: 80/255, green: 200/255, blue: 176/255, alpha: 1)]
         
         var colors: [UIColor] = []
         

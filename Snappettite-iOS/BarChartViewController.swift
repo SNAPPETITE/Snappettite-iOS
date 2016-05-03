@@ -39,7 +39,8 @@ class BarChartViewController: ViewController {
     
     //set a chart (with random data right now)
     func setChart(dataPoints: [String], values: [Double]) {
-        barChartView.noDataText = "You need to provide data for the chart."
+        
+        barChartView.noDataText = "Please give data."
         var dataEntries: [BarChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
@@ -47,6 +48,7 @@ class BarChartViewController: ViewController {
             dataEntries.append(dataEntry)
         }
         
+        //let or var?????
         let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "MG in your meal")
         let chartData = BarChartData(xVals: nutrient, dataSet: chartDataSet)
         barChartView.data = chartData
