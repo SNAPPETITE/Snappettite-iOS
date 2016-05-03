@@ -65,3 +65,5 @@ fastlane/screenshots
 Pods/
 *.xcworkspace
 Podfile.lock
+
+.DS_Store
