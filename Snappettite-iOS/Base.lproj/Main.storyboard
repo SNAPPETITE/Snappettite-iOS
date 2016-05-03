@@ -160,7 +160,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="krK-kb-z9S">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-Se-nPM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-Se-nPM">
                                 <rect key="frame" x="200" y="250" width="200" height="100"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <state key="normal" title="History" backgroundImage="forest outlaws">
@@ -170,7 +170,7 @@
                                     <segue destination="xHw-Pg-kY8" kind="showDetail" id="Iws-74-wrY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBp-jQ-ay0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBp-jQ-ay0">
                                 <rect key="frame" x="200" y="360" width="200" height="100"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <state key="normal" title="Settings" backgroundImage="forest outlaws">
@@ -187,7 +187,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heq-G4-WDn">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heq-G4-WDn">
                                 <rect key="frame" x="200" y="142" width="200" height="100"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                 <state key="normal" title="Camera" backgroundImage="forest outlaws">
@@ -229,7 +229,7 @@
         <!--History-->
         <scene sceneID="Yvw-Fq-3eT">
             <objects>
-                <viewController title="History" id="xHw-Pg-kY8" customClass="ViewController" customModule="Snappettite_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="History" id="xHw-Pg-kY8" customClass="ChartsViewController" customModule="Snappettite_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tuz-V6-Gku"/>
                         <viewControllerLayoutGuide type="bottom" id="f19-9c-cwq"/>
@@ -237,8 +237,52 @@
                     <view key="view" contentMode="scaleToFill" id="emR-0M-Kii">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkp-dX-3DU" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="140" y="102" width="320" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="cmO-9d-Yja"/>
+                                    <constraint firstAttribute="width" constant="320" id="ysP-0o-zK3"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZk-Ih-AAY">
+                                <rect key="frame" x="115" y="423" width="370" height="177"/>
+                            </pickerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-Fg-Mws">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="J3M-WA-usP">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="yi9-M3-eLr">
+                                            <connections>
+                                                <segue destination="oUf-CL-s2q" kind="showDetail" id="Z4G-QX-L8P"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSW-k8-1qo" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="140" y="333" width="320" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="7wZ-K3-xLN"/>
+                                    <constraint firstAttribute="height" constant="210" id="Cwt-Ge-ZTl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pkp-dX-3DU" firstAttribute="centerX" secondItem="emR-0M-Kii" secondAttribute="centerX" id="Hxr-Ex-gP7"/>
+                            <constraint firstItem="fSW-k8-1qo" firstAttribute="top" secondItem="Pkp-dX-3DU" secondAttribute="bottom" constant="21" id="U73-HS-3ae"/>
+                            <constraint firstItem="Pkp-dX-3DU" firstAttribute="top" secondItem="Tuz-V6-Gku" secondAttribute="bottom" constant="82" id="aOU-R1-33j"/>
+                            <constraint firstItem="fSW-k8-1qo" firstAttribute="centerX" secondItem="emR-0M-Kii" secondAttribute="centerX" id="jcz-2U-soM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Nutrients" destination="SZk-Ih-AAY" id="XRv-ex-HLs"/>
+                        <outlet property="lineChartView" destination="Pkp-dX-3DU" id="bWO-6U-2Ko"/>
+                        <outlet property="pieChartView" destination="fSW-k8-1qo" id="Wqv-OT-9fW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75e-aJ-DIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,6 +432,7 @@
         <image name="forest outlaws" width="200" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Z4G-QX-L8P"/>
         <segue reference="LgF-jF-3gD"/>
         <segue reference="NBZ-VW-slz"/>
     </inferredMetricsTieBreakers>
