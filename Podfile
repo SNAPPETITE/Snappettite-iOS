@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'Snappettite-iOS' do
         # Add libraries here...
+	pod 'Charts/Realm'
 end
 

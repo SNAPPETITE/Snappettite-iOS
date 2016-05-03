@@ -16,6 +16,7 @@
 		0B8F281A1CC51A690037DEA5 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F28191CC51A690037DEA5 /* RatingControl.swift */; };
 		0B8F281C1CC5884A0037DEA5 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */; };
 		0B8F281E1CC58A780037DEA5 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */; };
+		E0E9971B7957A826FC451E86 /* Pods_Snappettite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE219F55672F8B93CCE5191 /* Pods_Snappettite_iOS.framework */; };
 		E2B0F9501CAB77DA006FF3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */; };
 		E2B0F9521CAB77DA006FF3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */; };
 		E2B0F9551CAB77DA006FF3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F9531CAB77DA006FF3C9 /* Main.storyboard */; };
@@ -84,6 +85,9 @@
 		0B8F28191CC51A690037DEA5 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		0B8F281B1CC5884A0037DEA5 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 		0B8F281D1CC58A780037DEA5 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewController.swift; path = ../MealTableViewController.swift; sourceTree = "<group>"; };
+		4BE219F55672F8B93CCE5191 /* Pods_Snappettite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snappettite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762E2A42739BF6854295EE5F /* Pods-Snappettite-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappettite-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snappettite-iOS/Pods-Snappettite-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2C7F1410B6FABCA7A2E539 /* Pods-Snappettite-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappettite-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snappettite-iOS/Pods-Snappettite-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E2B0F94C1CAB77DA006FF3C9 /* Snappettite-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snappettite-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B0F94F1CAB77DA006FF3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B0F9511CAB77DA006FF3C9 /* ViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B473A41CCEE2510052533A /* Charts.framework in Frameworks */,
+				E0E9971B7957A826FC451E86 /* Pods_Snappettite_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +120,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9F0871072EA96736A4EF1C82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				762E2A42739BF6854295EE5F /* Pods-Snappettite-iOS.debug.xcconfig */,
+				AA2C7F1410B6FABCA7A2E539 /* Pods-Snappettite-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4502243F44D5D99C6ADF6EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BE219F55672F8B93CCE5191 /* Pods_Snappettite_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2B0F9431CAB77DA006FF3C9 = {
 			isa = PBXGroup;
 			children = (
 				05B473951CCEE2450052533A /* Charts.xcodeproj */,
 				E2B0F94E1CAB77DA006FF3C9 /* Snappettite-iOS */,
 				E2B0F94D1CAB77DA006FF3C9 /* Products */,
+				9F0871072EA96736A4EF1C82 /* Pods */,
+				B4502243F44D5D99C6ADF6EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,10 +182,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B0F9611CAB77DA006FF3C9 /* Build configuration list for PBXNativeTarget "Snappettite-iOS" */;
 			buildPhases = (
+				689D0A7F7D0EE595985DC600 /* Check Pods Manifest.lock */,
 				E2B0F9481CAB77DA006FF3C9 /* Sources */,
 				E2B0F9491CAB77DA006FF3C9 /* Frameworks */,
 				E2B0F94A1CAB77DA006FF3C9 /* Resources */,
 				05B473A81CCEE2520052533A /* Embed Frameworks */,
+				2C6BB3B20A33DE01C7D44032 /* Embed Pods Frameworks */,
+				B15C36E6F4C2CFBA020DFE37 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +284,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C6BB3B20A33DE01C7D44032 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snappettite-iOS/Pods-Snappettite-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		689D0A7F7D0EE595985DC600 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B15C36E6F4C2CFBA020DFE37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snappettite-iOS/Pods-Snappettite-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2B0F9481CAB77DA006FF3C9 /* Sources */ = {
@@ -390,6 +465,7 @@
 		};
 		E2B0F9621CAB77DA006FF3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E2A42739BF6854295EE5F /* Pods-Snappettite-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -412,6 +488,7 @@
 		};
 		E2B0F9631CAB77DA006FF3C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2C7F1410B6FABCA7A2E539 /* Pods-Snappettite-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
