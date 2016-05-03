@@ -37,6 +37,7 @@ class ChartsViewController: UIViewController {
             dataEntries.append(dataEntry)
         }
         
+        //pie chart set
         let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Nutrients")
         let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
@@ -55,11 +56,11 @@ class ChartsViewController: UIViewController {
         
         pieChartDataSet.colors = colors
         
-        
+        //line charts set
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Nutrients")
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartView.data = lineChartData
-        
+        lineChartDataSet.colors =  [UIColor(red: 80/255, green: 200/255, blue: 176/255, alpha: 1)]
     }
     
 }
