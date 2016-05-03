@@ -13,6 +13,8 @@ class BarChartViewController: ViewController {
     
     @IBAction func saveImage(sender: UIBarButtonItem) {
         barChartView.saveToCameraRoll()
+        //barChartView.getChartImage(transparent: false)
+        //how to transfer a NSUIImage to a UIImage?
     }
     
     @IBOutlet weak var barChartView: BarChartView!
